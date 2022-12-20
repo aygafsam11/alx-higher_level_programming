@@ -6,13 +6,13 @@ Its implements value and type checks for its attributes
 
 
 class Square:
-    """Square implementation
-    """
-    def __init__(self, size=0):
+    """Square im):
         self.__size = size
 
     @property
-    def size(self):
+    dplementation
+    """
+    def __init__(self, size=0ef size(self):
         return self.__size
 
     @size.setter
