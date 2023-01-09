@@ -1,12 +1,12 @@
 #!/usr/bin/python3
+'''
+class MyList that inherits from list
+Public instance method print_sorted(), that prints the list
+'''
+
+
 class MyList(list):
-    """ Class that inherits the attributes references of class list
-    Args:
-        list: class list
-    """
 
     def print_sorted(self):
-        """ Method that prints the sorted list """
-        l_sorted = self.copy()
-        l_sorted.sort()
-        print(l_sorted)
+        self.sort()
+        print(self)
