@@ -1,12 +1,8 @@
-#!/usr/bin/python3
-'''
-class MyList that inherits from list
-Public instance method print_sorted(), that prints the list
-'''
-
+ss MyList"""
 
 class MyList(list):
+    """Type clas#!/usr/bin/python3
+"""Define an inherited list clas MyList with print_sorted function"""
 
     def print_sorted(self):
-        self.sort()
-        print(self)
+        print(sorted(self))
