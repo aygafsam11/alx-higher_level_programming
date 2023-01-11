@@ -1,24 +1,19 @@
 #!/usr/bin/python3
-"""
-This module implements a Square object
-"""
-
+"""Define a Square class that inherits from Rectangle (9-rectangle.py), (task based on 10-square.py)"""
 
 Rectangle = __import__('9-rectangle').Rectangle
 
 
 class Square(Rectangle):
+    """Type class of a square inherit a rectangle"""
+
     def __init__(self, size):
-        """initialization
-        Args:
-            size (int): size
-        """
+
+        self.integer_validator("size", size)
         super().__init__(size, size)
         self.__size = size
 
     def __str__(self):
-        """string representation
-        Returns:
-            str: string
-        """
-        return "[Square] {:d}/{:d}".format(self.__size, self.__size)
+
+        string = "[Square] " + str(self.__size) + "/" + str(self.__size)
+        return string

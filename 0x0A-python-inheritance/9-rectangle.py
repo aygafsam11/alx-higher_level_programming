@@ -1,34 +1,24 @@
 #!/usr/bin/python3
-"""
-This module implements a Rectangle object
-"""
-
+"""Define a class Rectangle that inherits from BaseGeometry (7-base_geometry.py), (task based on 8-rectangle.py)"""
 
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
 class Rectangle(BaseGeometry):
+    """Type class of Rectangle inherit BaseGeometry"""
+
     def __init__(self, width, height):
-        """initialisation
-        Args:
-            width (int): width
-            height (int): height
-        """
-        self.integer_validator("width", width)
-        self.integer_validator("height", height)
+
+        super().integer_validator("width", width)
+        super().integer_validator("height", height)
         self.__width = width
         self.__height = height
 
     def area(self):
-        """area
-        Returns:
-            int: respon__height
+
+        return self.__width * self.__heightngle] " + str(self.__width) + "/" + str(self.__hei
 
     def __str__(self):
-        """stringse
-        """
-        return self.__width * self.
-        Returns:
-            str: string representation
-        """
-        return "[Rectangle] {:d}/{:d}".format(self.__width, self.__height)
+
+        string = "[Rectaght)
+        return string
