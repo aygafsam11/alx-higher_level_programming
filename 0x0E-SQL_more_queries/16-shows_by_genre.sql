@@ -1,10 +1,8 @@
--- If a show doesn’t have a genre, display NULL in the genre column
--- Each record should display: tv_shows.title - tv_genres.name
--- Results must be sorted in ascending order by the show title and genre name
--- You can use only one SELECT statement
--- The database name will be passed as an argument of the mysql command
-SELECT s.title, g.name
-FROM tv_shows s
-LEFT JOIN tv_show_genres m ON s.id = m.show_id
-LEFT JOIN tv_genres g ON m.genre_id = g.id
-ORDER BY s.title ASC;
+-- Script that lists all shows and all genres
+SELECT tv_shows.title, tv_genres.name -- Query to join tables
+FROM tv_shows
+     LEFT JOIN tv_show_genres
+     	  ON tv_show_genres.show_id = tv_shows.id
+     LEFT JOIN tv_genres
+	  ON tv_genres.id = tv_show_genres.genre_id
+ORDER BY tv_shows.title, tv_genres.name;
